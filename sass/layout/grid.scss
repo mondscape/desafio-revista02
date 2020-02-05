@@ -3,24 +3,23 @@
     grid-template-columns: repeat(12, 1fr);
     grid-template-rows: auto;
 }
-.navbar{
+nav{
     height: 150px;
     background-color: lightcoral;
 
 }
-.noticias{
+section{
     height: 500px;
+    max-height: 550px;;
     background-color: lightgreen;
 }
-.nosotros{
+aside{
     height: 700px;
     background-color: lightskyblue;
+    display: none;
 }
-.newsletter{
-    height: 200px;
-    background-color: lightslategrey;
-}
-.foot{
+
+footer{
     height: 150px;
     background-color: lightsalmon;
 }
@@ -105,7 +104,11 @@
     }
 
 // Large devices (desktops, 992px and up)
-@media (min-width: 992px) {  
+@media (min-width: 992px) { 
+    
+    aside{
+        display: block;
+    }
 
     .col-md-12 {
         grid-column: span 12;
